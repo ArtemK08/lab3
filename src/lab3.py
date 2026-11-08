@@ -86,7 +86,7 @@ def group_rooms_by_type(rooms_list):
     return grouped
 
 
-#  4. Використання вбудованих функцій (map, filter, reduce) та зрізів
+#   Використання вбудованих функцій (map, filter, reduce) та зрізів
 def get_all_guest_emails(guests_list):
     #використовує map() для отримання списку всіх електронних адрес гостей.
     return list(map(lambda g: g["email"], guests_list))
@@ -105,9 +105,9 @@ def get_top_expensive_rooms(rooms_list, top_n=3):
     return sorted_rooms[:top_n]
 
 
-#  5. Робота з множинами та словниками
+# Робота з множинами та словниками
 def analyze_amenities(rooms_list):
-    # операції з множинами для зручностей (зручності у всіх номерех, унікальні тощо).
+    # операції з множинами для.
     if not rooms_list:
         return set(), set()
     all_amenities = set.union(*(room["amenities"] for room in rooms_list))
@@ -124,7 +124,7 @@ def build_guest_frequency_index(bookings_list):
     return frequency
 
 
-#  6. Інтерактивний інтерфейс (Меню)
+# Інтерактивний інтерфейс (Меню)
 def main():
     print("Вітаємо в Системі бронювання готелів!")
 
